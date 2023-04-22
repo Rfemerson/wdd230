@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    background-color: #94B9AF;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    color: #00171F;
+    width: 700px;
+    height: 150px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#profile-photo {
+    grid-column: 1;
+    width: 130px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #214F4B;
+}
+
+h1 {
+    margin-right: 50px;
+}
+
+main h1 {
+    font-family: Roboto;
+    font-size: 28px;
+}
+
+main ul li {
+    font-family: Roboto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #94B9AF;
+    text-align: center;
+    color: #00171F;
+    font-size: 20px;
+    font-family: Roboto;
+    width: 700px;
+    height: 150px;
+    align-items: center;
+    border-radius: 50px;
+}
