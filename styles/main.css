@@ -32,7 +32,7 @@ h1 {
 }
 
 main h1 {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 28px;
 }
 
@@ -46,7 +46,7 @@ footer {
     text-align: center;
     color: #00171F;
     font-size: 20px;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     width: 700px;
     height: 150px;
     align-items: center;
