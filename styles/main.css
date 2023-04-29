@@ -19,9 +19,9 @@ header {
     border-radius: 50px;
 }
 
-#profile-photo {
+header img {
     grid-column: 1;
-    width: 130px;
+    width: 110px;
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #214F4B;
@@ -31,7 +31,7 @@ h1 {
     margin-right: 50px;
 }
 
-main h1 {
+main h2 {
     font-family: Roboto, serif;
     font-size: 28px;
 }

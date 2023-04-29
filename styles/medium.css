@@ -4,7 +4,7 @@
       border-radius: 0;
     }
     
-    #profile-photo {
+    header img {
       width: 80px;
       margin-left: 20px;
       margin-right: 20px;
@@ -14,7 +14,7 @@
       margin-right: 20px;
     }
     
-    main h1 {
+    main h2 {
       font-size: 24px;
     }
     
