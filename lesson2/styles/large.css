@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+:root {
+    /* fonts */
+    --heading-font: "Press Start 2P";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+    /* colors */
+    --black: #000000ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --white: #ffffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    height: 130px;
+    align-content: center;
+    display: block;
+    width: 100%;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    color: var(--orange-web);
+}
+
+header h2 {
+    font-family: var(--paragraph-font);
+    color: var(--white);
+    margin-top: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+}
+
+section {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #14213dff;
+    overflow: hidden;
+    width: 300px;
+    margin-left: 70px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section h3 {
+    color: var(--orange-web);
+    font-size: 20px;
+    background-color: var(--oxford-blue);
+    margin: 0;
+    padding-top: 20px;    
+    padding-bottom: 10px;
+    font-family: var(--paragraph-font);
+}
+
+section h4 {
+    font-family: var(--paragraph-font);
+}
+
+section p, a{
+    padding: 20px;
+    font-family: var(--paragraph-font);
+    text-align: left;
+}
+
+section a {
+    font-size: 12px;
+}
+
+section img {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    height: 130px;
+    align-content: center;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 20px;
+}
