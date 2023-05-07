@@ -1,0 +1,98 @@
+
+:root {
+    /* fonts */
+    --heading-font: "Arbutus Slab";
+    --paragraph-font: Barlow, Helvetica, sans-serif;
+    /* colors */
+    --oxford-blue: #0c1536ff;
+    --slate-gray: #64748cff;
+    --honolulu-blue: #0077b6ff;
+    --columbia-blue: #cbebfbff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--oxford-blue);
+    text-align: center;
+    height: 130px;
+    align-content: center;
+    display: block;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-align: center;
+    color: var(--columbia-blue);
+    text-decoration: none;
+    padding: 50px;
+    font-size: 30px;
+    font-family: var(--heading-font);
+}
+
+main {
+    text-align: center;
+}
+
+.colors {
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  .primary {
+    background-color: var(--oxford-blue);
+  }
+  .secondary {
+    background-color: var(--slate-gray);
+  }
+  .accent1 {
+    background-color: var(--honolulu-blue);
+  }
+  .accent2{
+    background-color: var(--columbia-blue);
+  }
+
+
+nav a:hover {
+    color: var(--honolulu-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--slate-gray);
+    text-decoration-thickness: 2px;
+}
+
+section h3 {
+    font-family: var(--heading-font);
+}
+
+section h4 {
+    font-family: var(--paragraph-font)
+}
+
+footer {
+    color: var(--columbia-blue);
+    text-decoration: none;
+    padding: 50px;
+    background-color: var(--oxford-blue);
+    text-align: center;
+    align-content: center;
+    display: block;
+    width: 100%;
+    font-family: var(--heading-font);
+}
