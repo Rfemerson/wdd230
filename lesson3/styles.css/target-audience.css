@@ -47,6 +47,24 @@ nav a:hover {
     text-decoration-color: var(--slate-gray);
     text-decoration-thickness: 2px;
 }
+main {
+    text-align: center;
+    margin: 20px;
+}
+section h1, section h2, section h3 {
+    font-family: var(--heading-font);
+    color: var(--honolulu-blue)
+}
+
+section ul {
+    justify-content: center;
+    list-style: inside;
+    font-family: var(--paragraph-font);
+}
+
+section p {
+    font-family: var(--paragraph-font);
+}
 
 footer {
     color: var(--columbia-blue);
@@ -58,4 +76,19 @@ footer {
     display: block;
     width: 100%;
     font-family: var(--heading-font);
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        width: auto;
+        height: 200px;
+    }
+    nav, footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
 }

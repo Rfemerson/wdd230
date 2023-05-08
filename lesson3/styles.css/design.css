@@ -96,3 +96,18 @@ footer {
     width: 100%;
     font-family: var(--heading-font);
 }
+
+@media screen and (max-width: 900px) {
+    header {
+        width: auto;
+        height: 200px;
+    }
+    nav, footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+}
