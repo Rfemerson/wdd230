@@ -74,7 +74,7 @@ footer {
     text-align: center;
     align-content: center;
     display: block;
-    width: 100%;
+    width: auto;
     font-family: var(--heading-font);
 }
 

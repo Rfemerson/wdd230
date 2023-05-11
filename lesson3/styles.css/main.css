@@ -78,7 +78,7 @@ footer {
     text-align: center;
     align-content: center;
     display: block;
-    width: 100%;
+    width: autos;
     font-family: var(--heading-font);
 }
 
@@ -95,5 +95,10 @@ footer {
     nav a {
         display: block;
         padding: 15px;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
     }
 }
