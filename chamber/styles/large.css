@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Barlow:wght@300&display=swap');
+
+:root {
+    /* fonts */
+    --heading-font: "Arbutus Slab";
+    --paragraph-font: Barlow, Helvetica, sans-serif;
+    /* colors */
+    --oxford-blue: #0c1536ff;
+    --slate-gray: #64748cff;
+    --honolulu-blue: #0077b6ff;
+    --columbia-blue: #cbebfbff;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--oxford-blue);
+    padding: 1rem 0;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+#logo {
+    width: 8rem;
+    border-radius: 150px;
+    padding: 1rem;
+    float: left;
+}
+header a {
+    text-align: center;
+    grid-column: 1;
+    justify-items: center;
+    text-decoration: none;
+}
+
+header h1, header h2 {
+    font-family: var(--heading-font);
+    color: var(--columbia-blue);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 50px;
+    letter-spacing: 0.6rem;
+    width: 390px;
+
+}
+
+header h2 {
+    font-size: 0.9rem;
+    width: 380px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2;
+    align-items: center;
+}
+
+nav a {
+    font-family: var(--heading-font);
+    color: var(--columbia-blue);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+header div{
+    grid-column: 3;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#current_day_header {
+    background-color: var(--columbia-blue);
+    color: var(--oxford-blue);
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    grid-column: 1/4;
+    margin: 0;    
+}
