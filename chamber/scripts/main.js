@@ -1,18 +1,26 @@
-   // Obter a data atual
-   const today = new Date();
 
-   const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const today = new Date();
 
-   const currentDayOfWeek = weekdays[today.getDay()];
+const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-   const currentDayOfMonth = today.getDate();
+const currentDayOfWeek = weekdays[today.getDay()];
 
-   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const currentDayOfMonth = today.getDate();
 
-   const currentMonth = months[today.getMonth()];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-   const currentYear = today.getFullYear();
+const currentMonth = months[today.getMonth()];
 
-   const currentDateFormatted = `${currentDayOfWeek}, ${currentDayOfMonth} ${currentMonth} ${currentYear}`;
+const currentYear = today.getFullYear();
 
-   document.querySelector('#current-day').innerHTML = currentDateFormatted;
+const currentDateFormatted = `${currentDayOfWeek}, ${currentDayOfMonth} ${currentMonth} ${currentYear}`;
+
+document.querySelector('#current-day').innerHTML = currentDateFormatted;
+
+const dateOfLastModifications = document.lastModified;
+
+document.getElementById("last-update").innerHTML  = dateOfLastModifications;
+
+document.documentElement.lang = navigator.language || navigator.userLanguage;
+
+document.querySelector('#currentYear').textContent = currentYear;
