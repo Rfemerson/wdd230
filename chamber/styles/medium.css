@@ -1,22 +1,4 @@
 @media screen and (min-width: 720px) and (max-width: 1280px ) {
 
-    :root {
-        /* fonts */
-        --heading-font: "Arbutus Slab";
-        --paragraph-font: Barlow, Helvetica, sans-serif;
-        /* colors */
-        --oxford-blue: #0c1536ff;
-        --slate-gray: #64748cff;
-        --honolulu-blue: #0077b6ff;
-        --columbia-blue: #cbebfbff;
-    }
-    
-    #hamButton {
-        display: none;
-    }
-
-    header {
-        width: 100px;
-    }
 
 }

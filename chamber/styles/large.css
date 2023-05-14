@@ -78,10 +78,6 @@ nav a:hover {
     text-decoration-color: var(--slate-gray);
 }
 
-#hamButton {
-    display: none;
-}
-
 header div{
     grid-column: 3;
     text-align: center;
