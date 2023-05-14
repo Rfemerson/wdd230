@@ -31,6 +31,7 @@ header {
     padding: 1rem;
     float: left;
 }
+
 header a {
     text-align: center;
     grid-column: 1;
@@ -71,6 +72,16 @@ nav a {
     padding: 1rem;
 }
 
+nav a:hover {
+    color: var(--honolulu-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--slate-gray);
+}
+
+#hamButton {
+    display: none;
+}
+
 header div{
     grid-column: 3;
     text-align: center;
@@ -84,4 +95,161 @@ header div{
     font-size: 1.2rem;
     grid-column: 1/4;
     margin: 0;    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: repeat(3, 300px);
+    margin: 50px auto 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 1800px;
+    font-family: var(--paragraph-font);
+    font-size: 2rem;
+}
+
+#event {
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px #14213dff;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+#weather {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px #14213dff;
+    overflow: hidden;    
+    padding: 1rem;
+}
+
+
+#join {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px #14213dff;
+    overflow: hidden;
+    padding: 1rem;    
+}
+
+#news {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px #14213dff;
+    grid-column: 2;
+    overflow: hidden;
+    padding: 1rem;    
+}
+
+#hero {
+    grid-column: 2;
+    grid-row: 1/3;
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px #14213dff;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+
+.spotlight {
+    grid-column: 3;
+    grid-row: 1/4;
+    flex-direction: row;
+    background-color: var(--slate-gray);
+    box-shadow: 2px 2px 2px rgb(26, 32, 45);
+    padding: 1rem;
+}
+
+#spotlight-1 {
+    border: 1px solid black;
+    padding: 1rem;
+    height: 270px;
+}
+
+#spotlight-2 {
+    border: 1px solid black;
+    padding: 1rem;
+    height: 270px;
+}
+
+#spotlight-3 {
+    border: 1px solid black;
+    padding: 1rem;
+    height: 270px;
+}
+
+footer {
+    background-color: var(--oxford-blue);
+    padding: 1rem 0;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+footer h1, footer h2 {
+    color: var(--columbia-blue);
+    margin: 0;
+    padding: 0;
+    grid-column: 1/3;
+}
+
+footer h1 {
+    font-family: var(--heading-font);
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+footer h2 {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+}
+
+footer hr {
+    grid-column: 1/4;
+    color: var(--slate-gray);
+    width: 95%;
+    padding: 0;
+}
+
+footer div {
+    height: 200px;
+}
+
+.contact-location, .contact-location a  {
+    grid-column: 3;
+    grid-row: 1;
+    color: var(--columbia-blue);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    justify-items: center;
+    max-width: 300px;
+    margin: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+.contact-location a:hover {
+    color: var(--honolulu-blue);
+    text-decoration: underline;
+    text-decoration-color: var(--slate-gray);
+}
+
+/* #location p {
+    margin-right: 70px;
+}
+
+#location img {
+    float: left;
+} */
+
+#project-information {
+    grid-column: 1/4;
+    text-align: center;
+    color: var(--columbia-blue);
 }
