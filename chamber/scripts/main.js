@@ -24,10 +24,3 @@ document.getElementById("last-update").innerHTML  = dateOfLastModifications;
 document.documentElement.lang = navigator.language || navigator.userLanguage;
 
 document.querySelector('#currentYear').textContent = currentYear;
-
-const hamButton = document.querySelector('#hamButton');
-const navigation = document.querySelector('#nav-bar');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('responsive');
-});

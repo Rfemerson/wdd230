@@ -72,12 +72,6 @@ nav a {
     padding: 1rem;
 }
 
-nav a:hover {
-    color: var(--honolulu-blue);
-    text-decoration: underline;
-    text-decoration-color: var(--slate-gray);
-}
-
 header div{
     grid-column: 3;
     text-align: center;
@@ -228,12 +222,6 @@ footer div {
     font-size: 1.2rem;
     text-decoration: none;
     
-}
-
-.contact-location a:hover {
-    color: var(--honolulu-blue);
-    text-decoration: underline;
-    text-decoration-color: var(--slate-gray);
 }
 
 /* #location p {
