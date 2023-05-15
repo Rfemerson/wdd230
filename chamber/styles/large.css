@@ -18,17 +18,22 @@ body {
 
 header {
     background-color: var(--oxford-blue);
-    padding: 1rem 0;
-    align-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1920px;
 }
 
 #logo {
     width: 8rem;
     border-radius: 150px;
     padding: 1rem;
+    align-items: center;
     float: left;
 }
 
@@ -39,7 +44,8 @@ header a {
     text-decoration: none;
 }
 
-header h1, header h2 {
+header h1,
+header h2 {
     font-family: var(--heading-font);
     color: var(--columbia-blue);
     margin: 0;
@@ -60,22 +66,40 @@ header h2 {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
-    grid-column: 2;
     align-items: center;
+    padding: 0;
+    margin: 10px auto;
 }
 
-nav a {
-    font-family: var(--heading-font);
+nav ul {
+    display: flex;
+    list-style-type: none;
     color: var(--columbia-blue);
     font-size: 1.5rem;
     padding: 1rem;
 }
 
-header div{
-    grid-column: 3;
+#nav-bar .navigation li {
+    margin-left: 10px;
+}
+
+#nav-bar .navigation li:first-child {
+    margin-left: 0;
+}
+
+#nav-bar .navigation li a {
+    text-decoration: none;
+    color: #cbebfbff;
+    font-family: var(--heading-font);
+}
+
+#hamButton {
+    display: none;
+}
+
+header div {
+    margin: 50px;
     text-align: center;
-    margin-top: 50px;
 }
 
 #current_day_header {
@@ -83,8 +107,9 @@ header div{
     color: var(--oxford-blue);
     font-family: var(--paragraph-font);
     font-size: 1.2rem;
-    grid-column: 1/4;
-    margin: 0;    
+    align-content: center;
+    width: 100%;
+    margin: 0;
 }
 
 main {
@@ -97,6 +122,7 @@ main {
     max-width: 1800px;
     font-family: var(--paragraph-font);
     font-size: 2rem;
+    margin: 50px;
 }
 
 #event {
@@ -111,10 +137,9 @@ main {
     grid-row: 2;
     background-color: var(--slate-gray);
     box-shadow: 2px 2px 2px #14213dff;
-    overflow: hidden;    
+    overflow: hidden;
     padding: 1rem;
 }
-
 
 #join {
     grid-column: 1;
@@ -122,7 +147,7 @@ main {
     background-color: var(--slate-gray);
     box-shadow: 2px 2px 2px #14213dff;
     overflow: hidden;
-    padding: 1rem;    
+    padding: 1rem;
 }
 
 #news {
@@ -132,7 +157,7 @@ main {
     box-shadow: 2px 2px 2px #14213dff;
     grid-column: 2;
     overflow: hidden;
-    padding: 1rem;    
+    padding: 1rem;
 }
 
 #hero {
@@ -143,7 +168,6 @@ main {
     overflow: hidden;
     padding: 1rem;
 }
-
 
 .spotlight {
     grid-column: 3;
@@ -210,7 +234,8 @@ footer div {
     height: 200px;
 }
 
-.contact-location, .contact-location a  {
+.contact-location,
+.contact-location a {
     grid-column: 3;
     grid-row: 1;
     color: var(--columbia-blue);
@@ -221,7 +246,7 @@ footer div {
     margin: 30px;
     font-size: 1.2rem;
     text-decoration: none;
-    
+
 }
 
 /* #location p {
