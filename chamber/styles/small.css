@@ -54,7 +54,7 @@
     main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 500 row-gap: 0.5rem;
+        grid-template-rows: 500;
         text-align: center;
         margin: 20px auto;
         max-width: 400px;
@@ -78,7 +78,7 @@
 
     #news {
         grid-column: 1/4;
-        grid-row: 4/;
+        grid-row: 4;
     }
 
     .spotlight {
