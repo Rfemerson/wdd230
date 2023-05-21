@@ -91,7 +91,14 @@ nav ul {
     text-decoration: none;
     color: #cbebfbff;
     font-family: var(--heading-font);
+    padding: 2rem;
 }
+
+.navigation li a:hover {
+    background-color: var(--slate-gray);
+    color: var(--oxford-blue);
+    font-weight: 700;
+  }
 
 #hamButton {
     display: none;
@@ -166,7 +173,37 @@ main {
     background-color: var(--slate-gray);
     box-shadow: 2px 2px 2px #14213dff;
     overflow: hidden;
-    padding: 1rem;
+    padding: 0;
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#hero h1 {
+    z-index: 0;
+    position: absolute;
+    padding: 2rem;
+    font-family: var(--heading-font);
+    color: var(--oxford-blue);
+}
+
+#hero button {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: var(--columbia-blue);
+    color: var(--oxford-blue);
+    font-size: 18px;
+    font-family: var(--heading-font);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .spotlight {
@@ -195,6 +232,13 @@ main {
     padding: 1rem;
     height: 270px;
 }
+
+.banner {
+    background-color: var(--columbia-blue);
+    color: var(--oxford-blue);
+    padding: 10px;
+    text-align: center;
+  }
 
 footer {
     background-color: var(--oxford-blue);

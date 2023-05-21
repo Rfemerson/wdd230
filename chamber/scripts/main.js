@@ -31,3 +31,15 @@ const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('responsive');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+	const currentDate = new Date();
+	const dayOfWeek = currentDate.getDay();
+  
+	if (dayOfWeek === 1 || dayOfWeek === 6) {
+	  const banner = document.createElement('div');
+	  banner.classList.add('banner');
+	  banner.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+	  document.body.prepend(banner);
+	}
+  });
