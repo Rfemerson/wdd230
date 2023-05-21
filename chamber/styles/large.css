@@ -155,16 +155,43 @@ main {
     box-shadow: 2px 2px 2px #14213dff;
     overflow: hidden;
     padding: 1rem;
+    text-align: center;
+}
+
+#join button {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: var(--honolulu-blue);
+    color: var(--oxford-blue);
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+#join p {
+    font-size: 1.5rem;
+    font-family: var(--paragraph-font);
 }
 
 #news {
     grid-column: 2;
     grid-row: 3;
+    text-align: center;
     background-color: var(--slate-gray);
     box-shadow: 2px 2px 2px #14213dff;
     grid-column: 2;
     overflow: hidden;
     padding: 1rem;
+}
+
+#news h3 {
+    font-family: var(--heading-font);
+    color: var(--oxford-blue);
+}
+
+#news p {
+    font-family: var(--paragraph-font);
+    color: var(--columbia-blue);
 }
 
 #hero {
