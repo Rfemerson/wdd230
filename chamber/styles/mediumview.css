@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #333;
   }
   .navigation li {
     display: none;

@@ -29,7 +29,7 @@ header {
     max-width: 1920px;
 }
 
-#logo {
+.logo {
     width: 8rem;
     border-radius: 150px;
     padding: 1rem;
@@ -246,7 +246,6 @@ footer div {
     margin: 30px;
     font-size: 1.2rem;
     text-decoration: none;
-
 }
 
 /* #location p {
