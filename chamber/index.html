@@ -13,7 +13,9 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="images/Sunland_resize.jpg" alt="Sunland Logo">
+            <figure class="clearfix">
+                <img src="images/Sunland_resize_logo2.jpg" alt="Sunland logo" srcset="images/Sunland_resize_logo1.png 1x, images/Sunland_resize_logo2.png 2x, images/Sunland_resize_logo3.png 3x">
+            </figure>
             <h1>Sunland</h1>
             <h2>Chamber of Commerce</h2>
         </a>
@@ -53,7 +55,12 @@
         </div>
         <div id="hero">
             <h1>Welcome to Fortaleza</h1>
-            <img src="images/hero-img.jpg">
+            <picture>
+                <source media="(max-width: 200px)" srcset="images/hero-img-200.jpg">
+                <source media="(max-width: 500px)" srcset="images/hero-img-500.jpg">
+                <source media="(max-width: 800px)" srcset="images/hero-img-800.jpg">
+                <img src="images/hero-img-1100.jpg">
+            </picture>
             <button id="joinChamber">Join the Chamber</button>
         </div>
         <div class="spotlight">

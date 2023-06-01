@@ -332,3 +332,9 @@ footer div {
     text-align: center;
     color: var(--columbia-blue);
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
