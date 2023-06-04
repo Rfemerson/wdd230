@@ -13,9 +13,10 @@
 <body>
     <header>
         <a href="index.html">
-            <figure class="clearfix">
-                <img src="images/Sunland_resize_logo2.jpg" alt="Sunland logo" srcset="images/Sunland_resize_logo1.png 1x, images/Sunland_resize_logo2.png 2x, images/Sunland_resize_logo3.png 3x">
-            </figure>
+            <picture>
+                <!-- <source srcset="img/Sunland.webp" type="image/webp"> -->
+                <img class="logo" src="images/Sunland.webp" alt="logo">
+            </picture>
             <h1>Sunland</h1>
             <h2>Chamber of Commerce</h2>
         </a>
@@ -42,7 +43,14 @@
     </header>
     <main>
         <div id="event">Event</div>
-        <div id="weather">Weather</div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <p>
+                Temperature: <span id="Temperature">5</span> °C<br>
+                Wind Speed: <span id="windSpeed">15</span> km/h<br>
+                Wind chill: <span id="windChill">N/A</span>
+            </p>
+          </div>
         <div id="join">
             <button id="joinUs">Join Us!</button>
             <p>Discover how to join the chamber of commerce and how it benefit your organization</p>
@@ -56,9 +64,9 @@
         <div id="hero">
             <h1>Welcome to Fortaleza</h1>
             <picture>
-                <source media="(max-width: 200px)" srcset="images/hero-img-200.jpg">
-                <source media="(max-width: 500px)" srcset="images/hero-img-500.jpg">
-                <source media="(max-width: 800px)" srcset="images/hero-img-800.jpg">
+                <source media="(max-width: 200px)" srcset="img/images/hero-img-200.jpg">
+                <source media="(max-width: 500px)" srcset="img/images/hero-img-500.jpg">
+                <source media="(max-width: 800px)" srcset="img/images/hero-img-800.jpg">
                 <img src="images/hero-img-1100.jpg">
             </picture>
             <button id="joinChamber">Join the Chamber</button>
