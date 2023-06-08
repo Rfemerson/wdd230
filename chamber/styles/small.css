@@ -102,5 +102,91 @@
         align-items: center;
     }
 
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 2rem;
+        max-width: 1500px;
+        text-align: center;
+    }
+
+    .information,
+    .location,
+    .demographic {
+        border: 2px solid #0c1536ff;
+        padding: 1rem;
+        text-align: center;
+        grid-row: 1/4;
+    }
+
+    .information h4,
+    .information p,
+    .location h4,
+    .location p,
+    .demographic h4,
+    .demographic p {
+        margin: 0;
+        padding: 0.2rem;
+    }
+
+    #beach-info {
+        grid-column: 1/8;
+        grid-row: 1;
+    }
+
+    #demo-info {
+        grid-column: 1/8;
+        grid-row: 3;
+    }
+
+    #location-info {
+        grid-column: 1/8;
+        grid-row: 5;
+    }
+
+    #beach-img {
+        grid-column: 1/8;
+        grid-row: 2;
+    }
+
+    #demo-img {
+        grid-column: 1/8;
+        grid-row: 4;
+    }
+
+    #location-img {
+        grid-column: 1/8;
+        grid-row: 6;
+        width: 500px;
+    }
+
+    #location-img img {
+        width: auto;
+    }
+
+    .galery {
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .galery:hover {
+        opacity: 0.7;
+    }
+
+    /* main figure.galery {
+        width: 100%;
+        margin: 0 0 0 2%;
+        float: right;
+    }
+
+    main figure.galery img {
+        width: 100%;
+    } */
+
+    main figure.galery figcaption {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
 
 }
