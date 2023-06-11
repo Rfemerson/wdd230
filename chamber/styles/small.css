@@ -188,5 +188,9 @@
         font-size: 1.5rem;
     }
 
-
+    /* JOIN US PAGE */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }

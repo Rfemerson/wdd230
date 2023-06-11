@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon(1).ico">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/mediumview.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <title>Sunland - Chamber of Commerc</title>
+    </head>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <picture>
+                <!-- <source srcset="img/Sunland.webp" type="image/webp"> -->
+                <img class="logo" src="images/Sunland.webp" alt="logo">
+            </picture>
+            <h1>Sunland</h1>
+            <h2>Chamber of Commerce</h2>
+        </a>
+        <nav id="nav-bar">
+            <button id="hamButton">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join">Join</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+	       </ul>
+        </nav>
+        <div>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/icons8-facebook-48.png" alt="facebook icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="images/icons8-linkedin-48.png" alt="linkedin icon">
+            </a>
+        </div>
+        <div id="current_day_header">
+        <p><span id="current-day"></span></p>
+        </div>
+    </header>
+    <main>
+    <div id="form">
+    <h1>Welcome to the Join Page</h1>
+    <form method="get" action="thankyou.html">
+      <label for="first-name">First Name:
+        <input type="text" id="first-name" name="first_name" required>
+      </label>
+      <br>
+      <label for="last-name">Last Name:
+        <input type="text" id="last-name" name="last_name" required>
+      </label>
+      <br>
+      <label for="position">Business Position:
+        <input type="text" id="position" name="business_position" title="Please enter at least seven characters with only letters, hyphens, and spaces">
+      </label>
+      <br>
+      <label for="email">Email:
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+      </label>
+      <br>
+      <label for="phone">Cell Phone Number:
+        <input type="tel" id="phone" name="phone_number" required>
+      </label>
+      <br>
+      <label for="business-name">Business Name/Title:
+        <input type="text" id="business-name" name="business_name" required>
+      </label>
+      <br>
+      <label for="membership-level">Membership Level:</label>
+      <select id="membership-level" name="membership_level">
+        <option value="np-membership">NP Membership (Free)</option>
+        <option value="bronze-membership">Bronze Membership</option>
+        <option value="silver-membership">Silver Membership</option>
+        <option value="gold-membership">Gold Membership</option>
+      </select>
+      </div>
+      <div class="membership-benefits">
+        <h3>Membership Level Benefits:</h3>
+        <p>NP Membership: No fee</p>
+        <p>Bronze Membership: Benefits here...</p>
+        <p>Silver Membership: Benefits here...</p>
+        <p>Gold Membership: Benefits here...</p>
+      </div>
+  
+      <label for="business-description">Business Description:</label>
+      <textarea id="business-description" name="business_description"></textarea>
+  
+      <input type="hidden" id="form-loaded-time" name="form_loaded_time" value="">
+  
+      <input type="submit" value="Submit">
+      </main>
+    </form>
+    <footer>
+        <a href="index.html">
+            <img class="logo" src="images/Sunland.webp" alt="Sunland Logo">
+            <h1>Sunland Chamber of Commerce</h1>
+            <h2>Rua das Flores 123, Neighborhood of the Rising Sun, Fortaleza - CE</h2>
+        </a>
+    <div class="contact-location">
+        <p>info@sunlandchamber.org <br> +55 (85) 3333-4444</p>
+        <a id="location" href="https://bit.ly/locationSunlandChamber">
+            <p>Location Map
+                <!-- <img src="images/icons8-marcador-30.png" alt="Location icon"> -->
+            </p>
+        </a>
+    </div>
+    <hr>
+    <p id="project-information">&copy; Sunland Chamber <span id="currentYear"></span> | Emerson Rodrigues | WDD 230 Project | Last Modification: <span id="last-update"></span></p>
+    </footer>
+  
+</body>
+</html>
