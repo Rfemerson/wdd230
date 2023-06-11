@@ -111,29 +111,36 @@
     text-align: center;
   }
 
-  .information, .location,.demographic {
+  .information,
+  .location,
+  .demographic {
     border: 2px solid #0c1536ff;
     padding: 1rem;
     text-align: center;
     grid-row: 1/4;
   }
 
-  .information h4, .information p, .location h4, .location p, .demographic h4, .demographic p {
+  .information h4,
+  .information p,
+  .location h4,
+  .location p,
+  .demographic h4,
+  .demographic p {
     margin: 0;
     padding: 0.2rem;
   }
 
-  #beach-info{
+  #beach-info {
     grid-column: 1/8;
     grid-row: 1;
   }
 
-  #demo-info{
+  #demo-info {
     grid-column: 1/8;
     grid-row: 3;
   }
 
-  #location-info{
+  #location-info {
     grid-column: 1/8;
     grid-row: 5;
   }
@@ -186,5 +193,12 @@
   main {
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
   }
+
+  .membership-benefits {
+    border: none;
+    margin-top: 2rem;
+  }
+
 }

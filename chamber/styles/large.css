@@ -408,14 +408,16 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     padding: 2rem;
     align-items: center;
 }
 
 main #form {
-    display: block;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
     margin-bottom: 10px;
     border: 2px solid #0c1536ff;
     padding: 2rem;
@@ -452,11 +454,25 @@ textarea {
 
 .membership-benefits {
     display: block;
-    margin-bottom: 10px;
-    padding: 2rem;
+    padding: 1rem;
+    border: 2px solid #0c1536ff;
     text-align: center;
     border-radius: 1rem;
     color: var(--oxford-blue);
+    margin-top: -37px;
+}
+
+.membership-benefits h4,
+.membership-benefits p {
+    margin: 3rem;
+}
+
+.membership-benefits h1 {
+    margin: 1rem;
+}
+
+.business {
+    width: 100%;
 }
 
 input[type="submit"] {
@@ -471,4 +487,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--honolulu-blue);
     color: var(--oxford-blue);
+}
+
+/* THANK YOU PAGE */
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div h1 {
+    font-family: var(--heading-font);
 }
