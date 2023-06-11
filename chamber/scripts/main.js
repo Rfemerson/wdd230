@@ -43,3 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  document.body.prepend(banner);
 	}
   });
+
+// Set the value of the hidden field to the current date and time
+const loadedTime = new Date().toLocaleString();
+document.getElementById("form-loaded-time").value = loadedTime;

@@ -98,7 +98,7 @@ nav ul {
     background-color: var(--slate-gray);
     color: var(--oxford-blue);
     font-weight: 700;
-  }
+}
 
 #hamButton {
     display: none;
@@ -265,7 +265,7 @@ main {
     color: var(--oxford-blue);
     padding: 10px;
     text-align: center;
-  }
+}
 
 footer {
     background-color: var(--oxford-blue);
@@ -276,7 +276,8 @@ footer {
     width: 100%;
 }
 
-footer h1, footer h2 {
+footer h1,
+footer h2 {
     color: var(--columbia-blue);
     margin: 0;
     padding: 0;
@@ -346,7 +347,9 @@ main {
     padding: 2rem;
 }
 
-.information, .location, .demographic {
+.information,
+.location,
+.demographic {
     display: flex;
     flex-direction: column;
     border: 2px solid #0c1536ff;
@@ -355,7 +358,12 @@ main {
     text-align: center;
 }
 
-.information h4, .information p, .location h4, .location p, .demographic h4, .demographic p {
+.information h4,
+.information p,
+.location h4,
+.location p,
+.demographic h4,
+.demographic p {
     margin: 0;
     padding: 0.2rem;
 }
@@ -366,7 +374,9 @@ main {
     transition: 0.3s;
 }
 
-.galery:hover {opacity: 0.7;}
+.galery:hover {
+    opacity: 0.7;
+}
 
 
 
@@ -392,6 +402,10 @@ main figure.galery figcaption {
 
 /* JOIN US PAGE */
 
+body {
+    background-color: #EEF7FB;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -401,10 +415,13 @@ main {
 }
 
 main #form {
+    display: block;
+    margin-bottom: 10px;
     border: 2px solid #0c1536ff;
     padding: 2rem;
     max-width: 900px;
     text-align: center;
+    border-radius: 1rem;
 }
 
 main #form h1 {
@@ -412,5 +429,46 @@ main #form h1 {
 }
 
 main #form label {
+    display: block;
+    margin-bottom: 10px;
     font-family: var(--paragraph-font);
+    color: var(--oxford-blue);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.membership-benefits {
+    display: block;
+    margin-bottom: 10px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--oxford-blue);
+}
+
+input[type="submit"] {
+    background-color: var(--oxford-blue);
+    color: var(--columbia-blue);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--honolulu-blue);
+    color: var(--oxford-blue);
 }
