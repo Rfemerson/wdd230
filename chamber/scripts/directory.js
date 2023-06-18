@@ -18,20 +18,22 @@ const displayCompanies = (companies) => {
         let logoImg = document.createElement('img');
         let address = document.createElement('p');
         let contact = document.createElement('p');
-        let webSite = document.createElement('p');
+        let webSite = document.createElement('a');
 
 
         name.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         contact.textContent = ` ${company.contact}`;
-        webSite.textContent = `Death: ${company.link}`;
+        webSite.textContent = `Visit Our Partner: ${company.name}`;
 
         logoImg.setAttribute('src', company.logoPath);
         logoImg.setAttribute('alt', `logoImg of ${company.name}`);
         logoImg.setAttribute('loading', 'lazy');
         logoImg.setAttribute('width', '300');
         logoImg.setAttribute('height', '300');
-        
+
+        webSite.setAttribute("href", webSite.textContent)
+
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(contact);

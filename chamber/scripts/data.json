@@ -4,7 +4,7 @@
             "name": "Beach Park",
             "address": "Rua Porto das Dunas, 2734",
             "contact": "85 4012-3000",
-            "logoPath": "/chamber/images/beach-park-logo-358x358",
+            "logoPath": "https://raw.githubusercontent.com/Rfemerson/wdd230/main/chamber/images/beach-park-logo-358x358.jpg",
             "link": "https://beachpark.com.br/"
         },
         {
@@ -32,7 +32,7 @@
             "name": "PontoGO",
             "address": "Rua Monsenhor Bruno, 1153 Salas 1606 e 1608",
             "contact": "(41) 99281-0185",
-            "logoPath": "https://drive.google.com/file/d/1BNig_9HburIEuo0VBjP0eM9QiCV9PSEW/view?usp=sharing",
+            "logoPath": "https://raw.githubusercontent.com/Rfemerson/wdd230/main/chamber/images/LOGO%20PONTO%20GO%20APROVADA%20RGB-17.jpg",
             "link": "https://pontogo.com.br/"
         },
         {
