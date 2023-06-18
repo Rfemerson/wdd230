@@ -201,4 +201,10 @@
     margin-top: 2rem;
   }
 
+  /* Directory PAGE */
+  .company {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }

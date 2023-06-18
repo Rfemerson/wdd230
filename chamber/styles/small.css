@@ -199,4 +199,13 @@
         border: none;
         margin-top: 2rem;
     }
+/* Directory PAGE */
+    #directory {
+        max-width: 400px;
+    }
+
+    .company {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
