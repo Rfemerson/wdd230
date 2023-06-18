@@ -119,7 +119,7 @@ header div {
     margin: 0;
 }
 
-main {
+#index {
     display: grid;
     grid-template-columns: 1fr 900px 1fr;
     grid-template-rows: repeat(3, 300px);
