@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Beach Park",
+            "address": "Rua Porto das Dunas, 2734",
+            "contact": "85 4012-3000",
+            "logoPath": "/chamber/images/beach-park-logo-358x358",
+            "link": "https://beachpark.com.br/"
+        },
+        {
+            "name": "CrocoBeach",
+            "address": "Av. Zezé Diogo, 3125",
+            "contact": "85 3771-0505",
+            "logoPath": "https://portalsabores.com.br/wp-content/uploads/2012/12/croco-150x150.jpg",
+            "link": "https://crocobeach.com.br/"
+        },
+        {
+            "name": "Ipark",
+            "address": "Estr. da Ypioca, s/n",
+            "contact": "(85) 3341-0407",
+            "logoPath": "https://site.ipark.tur.br/wp-content/themes/mauna/img/logo.png",
+            "link": "https://site.ipark.tur.br/"
+        },
+        {
+            "name": "Imprensa Food Square",
+            "address": "Av. Desembargador Moreira, 2355",
+            "contact": "(85) 3462-7000",
+            "logoPath": "https://images.multipedidos.com.br/profiles/5a1e3547d11dd6b677ca40ccad52c8eab9c76b404b9ff16336766b0b244d704c.jpg",
+            "link": "https://www.instagram.com/imprensafoodsquareoficial/"
+        },
+        {
+            "name": "PontoGO",
+            "address": "Rua Monsenhor Bruno, 1153 Salas 1606 e 1608",
+            "contact": "(41) 99281-0185",
+            "logoPath": "https://drive.google.com/file/d/1BNig_9HburIEuo0VBjP0eM9QiCV9PSEW/view?usp=sharing",
+            "link": "https://pontogo.com.br/"
+        },
+        {
+            "name": "Aeroporto Internacional de Fortaleza",
+            "address": " Av. Senador Carlos Jereissati, 3000",
+            "contact": "(85) 3392-1030",
+            "logoPath": "data:image/png;base64,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",
+            "link": "https://fortaleza-airport.com.br/pt/"
+        },
+        {
+            "name": "Mota Machado",
+            "address": "Av. Dom Luís, 880",
+            "contact": "(85) 3208-1100",
+            "logoPath": "https://sindojus-ce.org.br/wp-content/uploads/2017/08/E-Mota-Machado.jpg",
+            "link": "https://motamachado.com.br/"
+        },
+        {
+            "name": "Iguatemi Bosque",
+            "address": "Av. Washington Soares, 85",
+            "contact": "(85) 3477-3560",
+            "logoPath": "https://www.igtfortaleza.com.br//wp-content/uploads/2018/10/logo-iguatemi.png",
+            "link": "https://www.igtfortaleza.com.br/"
+        },
+        {
+            "name": "RioMar Fortaleza",
+            "address": " R. Des. Lauro Nogueira, 1500",
+            "contact": "(85) 3066-2002",
+            "logoPath": "https://i0.wp.com/abrasce.com.br/wp-content/uploads/2019/04/riomarfortaleza.jpg?fit=354%2C309&ssl=1",
+            "link": "https://riomarfortaleza.com.br/"
+        }
+    ]
+}
