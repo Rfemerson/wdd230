@@ -43,3 +43,17 @@ const displayCompanies = (companies) => {
         business.appendChild(card);
     });
 }
+
+// const gridbutton = document.querySelector(".company");
+// const listbutton = document.querySelector("#list");
+// const display = document.querySelector("#directory");
+
+// gridbutton.addEventListener("click", () => {
+// 	display.classList.remove("list");
+// });
+
+// listbutton.addEventListener("click", showList); 
+
+// function showList() {
+// 	display.classList.add("list");
+// }
