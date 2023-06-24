@@ -132,9 +132,12 @@ header div {
     margin: 50px;
 }
 
+#index div {
+    border: 2px solid #0c1536ff;
+}
+
 #event {
-    background-color: var(--slate-gray);
-    box-shadow: 2px 2px 2px #14213dff;
+    box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
     padding: 1rem;
 }
@@ -142,17 +145,62 @@ header div {
 #weather {
     grid-column: 1;
     grid-row: 2;
-    background-color: var(--slate-gray);
-    box-shadow: 2px 2px 2px #14213dff;
+    text-align: center;
+    box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
     padding: 1rem;
+}
+
+#weather h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+#weather p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#weather div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin: auto auto 1.5em;
+    border: none;
+}
+
+#current-temp{
+    font-size: 2rem;
+}
+
+#weather figure {
+    margin: -1rem;
+}
+
+#weather figcaption {
+    margin: -1rem;
+    font-size: 1.5rem;
+}
+
+#weather a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--honolulu-blue);
+}
+
+#weather a:hover {
+    font-size: 1rem;
+    color: var(--oxford-blue);
+    text-decoration: underline;
 }
 
 #join {
     grid-column: 1;
     grid-row: 3;
-    background-color: var(--slate-gray);
-    box-shadow: 2px 2px 2px #14213dff;
+    box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
     padding: 1rem;
     text-align: center;
@@ -174,11 +222,10 @@ header div {
 }
 
 #news {
+    box-shadow: 0 0 5px #0c1536ff;
     grid-column: 2;
     grid-row: 3;
     text-align: center;
-    background-color: var(--slate-gray);
-    box-shadow: 2px 2px 2px #14213dff;
     grid-column: 2;
     overflow: hidden;
     padding: 1rem;
@@ -197,7 +244,6 @@ header div {
 #hero {
     grid-column: 2;
     grid-row: 1/3;
-    background-color: var(--slate-gray);
     box-shadow: 2px 2px 2px #14213dff;
     overflow: hidden;
     padding: 0;
@@ -237,25 +283,24 @@ header div {
     grid-column: 3;
     grid-row: 1/4;
     flex-direction: row;
-    background-color: var(--slate-gray);
-    box-shadow: 2px 2px 2px rgb(26, 32, 45);
+    box-shadow: 0 0 5px #0c1536ff;
     padding: 1rem;
 }
 
 #spotlight-1 {
-    border: 1px solid black;
+    border: 1px solid #0077b6ff;
     padding: 1rem;
     height: 270px;
 }
 
 #spotlight-2 {
-    border: 1px solid black;
+    border: 1px solid #0077b6ff;
     padding: 1rem;
     height: 270px;
 }
 
 #spotlight-3 {
-    border: 1px solid black;
+    border: 1px solid #0077b6ff;
     padding: 1rem;
     height: 270px;
 }
