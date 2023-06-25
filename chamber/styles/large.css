@@ -331,7 +331,7 @@ header div {
 
 #spotlight-1, #spotlight-2, #spotlight-3 {
     border: 1px solid #0077b6ff;
-    padding: 1rem;
+    padding: 0.5rem;
     height: 270px;
 }
 

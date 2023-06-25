@@ -53,7 +53,6 @@ const path = 'scripts/data.json'
 async function getCompanyData() {
     const response = await fetch(path);
     const data = await response.json();
-    console.table(data.companies);
     spotlight(data.companies[0], "spotlight-1");
 	spotlight(data.companies[4], "spotlight-2");
 	spotlight(data.companies[7], "spotlight-3");
