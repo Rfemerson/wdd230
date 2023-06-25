@@ -45,5 +45,45 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 // Set the value of the hidden field to the current date and time
-const loadedTime = new Date().toLocaleString();
-document.getElementById("form-loaded-time").value = loadedTime;
+// const loadedTime = new Date().toLocaleString();
+// document.getElementById("form-loaded-time").value = loadedTime;
+
+const path = 'scripts/data.json'
+
+async function getCompanyData() {
+    const response = await fetch(path);
+    const data = await response.json();
+    console.table(data.companies);
+    spotlight(data.companies[0], "spotlight-1");
+	spotlight(data.companies[4], "spotlight-2");
+	spotlight(data.companies[7], "spotlight-3");
+}
+
+getCompanyData();
+
+const spotlight = (company, spotlightId) => {
+    const business = document.querySelector(`#${spotlightId}`);
+
+	let name = document.createElement('h4');
+	let logoImg = document.createElement('img');
+	let contact = document.createElement('p');
+	let webSite = document.createElement('a');
+
+
+	name.textContent = `${company.name}`;
+	contact.textContent = ` ${company.contact}`;
+	webSite.textContent = `Our Partner: ${company.name}`;
+
+	logoImg.setAttribute('src', company.logoPath);
+	logoImg.setAttribute('alt', `logoImg of ${company.name}`);
+	logoImg.setAttribute('loading', 'lazy');
+	logoImg.setAttribute('width', '150');
+	logoImg.setAttribute('height', '150');
+
+	webSite.setAttribute("href", webSite.textContent)
+
+	business.appendChild(logoImg);
+	business.appendChild(name);
+	business.appendChild(contact);
+	business.appendChild(webSite);
+}

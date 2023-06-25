@@ -146,6 +146,7 @@ header div {
 #event h2 {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: var(--heading-font);
 }
 
 #event p {
@@ -325,24 +326,42 @@ header div {
     flex-direction: row;
     box-shadow: 0 0 5px #0c1536ff;
     padding: 1rem;
+    text-align: center;
 }
 
-#spotlight-1 {
+#spotlight-1, #spotlight-2, #spotlight-3 {
     border: 1px solid #0077b6ff;
     padding: 1rem;
     height: 270px;
 }
 
-#spotlight-2 {
-    border: 1px solid #0077b6ff;
-    padding: 1rem;
-    height: 270px;
+#spotlight-1 img, #spotlight-2 img, #spotlight-3 img {
+    border-radius: 10px;
 }
 
-#spotlight-3 {
-    border: 1px solid #0077b6ff;
-    padding: 1rem;
-    height: 270px;
+
+#spotlight-1 h4, #spotlight-2 h4, #spotlight-3 h4 {
+    margin: 0;
+    font-family: var(--heading-font);
+}
+
+#spotlight-1 p, #spotlight-2 p, #spotlight-3 p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--paragraph-font);
+}
+
+#spotlight-1 a, #spotlight-2 a, #spotlight-3 a {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    color: var(--oxford-blue);
+}
+
+#spotlight-1 a:hover, #spotlight-2 a:hover, #spotlight-3 a:hover {
+    color: var(--honolulu-blue);
+    text-decoration: underline;
 }
 
 .banner {
