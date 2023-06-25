@@ -140,6 +140,27 @@ header div {
     box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
     padding: 1rem;
+    text-align: center;
+}
+
+#event h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#event p {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#event a {
+    text-decoration: none;
+    color: var(--oxford-blue);    
+}
+
+#event a:hover {
+    text-decoration: underline;
+    color: var(--honolulu-blue);
 }
 
 #weather {
@@ -198,22 +219,34 @@ header div {
 }
 
 #join {
+    display: flex;
+    flex-wrap: wrap;
     grid-column: 1;
     grid-row: 3;
     box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
-#join button {
+#joinUs {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     background-color: var(--honolulu-blue);
+    font-family: var(--heading-font);
+    cursor: pointer;
+}
+
+#joinUs {
+    text-decoration: none;
     color: var(--oxford-blue);
     font-size: 2rem;
-    font-family: var(--heading-font);
+}
+
+#joinUs:hover{
+    background-color: var(--slate-gray);
+    color: var(--columbia-blue);
 }
 
 #join p {
@@ -228,17 +261,18 @@ header div {
     text-align: center;
     grid-column: 2;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 #news h3 {
     font-family: var(--heading-font);
     color: var(--oxford-blue);
+    margin: 0;
 }
 
 #news p {
     font-family: var(--paragraph-font);
-    color: var(--columbia-blue);
+    color: var(--oxford-blue);
 }
 
 #hero {
@@ -265,7 +299,7 @@ header div {
     color: var(--oxford-blue);
 }
 
-#hero button {
+#hero a {
     position: absolute;
     top: 90%;
     left: 80%;
@@ -277,6 +311,12 @@ header div {
     font-family: var(--heading-font);
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#hero a:hover {
+    background-color: var(--oxford-blue);
+    color: var(--columbia-blue);
 }
 
 .spotlight {
