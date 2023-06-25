@@ -13,6 +13,7 @@
 
 body {
     margin: 0;
+    background-color: #EEF7FB;
 }
 
 header {
@@ -115,6 +116,10 @@ header div {
     align-content: center;
     width: 100%;
     margin: 0;
+}
+
+#curreny-day{
+    width: 100%;
 }
 
 #index {
@@ -294,7 +299,7 @@ header div {
     position: absolute;
     padding: 2rem;
     font-family: var(--heading-font);
-    color: var(--oxford-blue);
+    color: #EEF7FB;
 }
 
 #hero a {
@@ -320,9 +325,8 @@ header div {
 .spotlight {
     grid-column: 4/5;
     grid-row: 1/4;
-    flex-direction: row;
     box-shadow: 0 0 5px #0c1536ff;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
