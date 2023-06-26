@@ -101,7 +101,7 @@
         align-items: center;
     }
 
-    main {
+    .discover {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, 1fr);
         padding: 2rem;
@@ -182,7 +182,7 @@
         width: 100%;
     } */
 
-    main figure.galery figcaption {
+    .discover figure.galery figcaption {
         text-align: center;
         font-size: 1.5rem;
     }
@@ -199,12 +199,13 @@
         margin-top: 2rem;
     }
 /* Directory PAGE */
-    #directory {
-        max-width: 400px;
-    }
-
     .company {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .company img {
+        width: 50%;
+        height: 50%;
     }
 }

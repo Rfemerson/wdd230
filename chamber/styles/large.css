@@ -615,9 +615,10 @@ div h1 {
 
 .company {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
     row-gap: 1.5rem;
+    padding: 3rem;
 }
 
 .company h2 {

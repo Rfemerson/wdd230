@@ -103,8 +103,9 @@
     grid-column: 3/6;
     grid-row: 5;
   }
-
-  main {
+  
+  /* Discover Page */
+  .discover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     padding: 2rem;
@@ -206,6 +207,7 @@
   .company {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/3;
   }
 
 }
