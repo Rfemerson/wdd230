@@ -50,11 +50,11 @@
     <div id="form">
       <h1>Join Us</h1>
       <form method="get" action="thankyou.html">
-        <label for="first-name">First Name:
+        <label for="first-name">First Name<span class="required">*</span>:
           <input type="text" id="first-name" name="first_name" required>
         </label>
         <br>
-        <label for="last-name">Last Name:
+        <label for="last-name">Last Name<span class="required">*</span>:
           <input type="text" id="last-name" name="last_name" required>
         </label>
         <br>
@@ -63,11 +63,11 @@
             title="Please enter at least seven characters with only letters, hyphens, and spaces">
         </label>
         <br>
-        <label for="email">Email:
+        <label for="email">Email<span class="required">*</span>:
           <input type="email" id="email" name="email" required placeholder="example@example.com">
         </label>
         <br>
-        <label for="phone">Cell Phone Number:
+        <label for="phone">Cell Phone Number<span class="required">*</span>:
           <input type="tel" id="phone" name="phone_number" required>
         </label>
         <br>
@@ -82,6 +82,14 @@
           <option value="silver-membership">Silver Membership</option>
           <option value="gold-membership">Gold Membership</option>
         </select>
+        <div class="business">
+          <label id="business-description" for="business-description">Business Description:</label>
+          <textarea id="business-description" name="business_description"></textarea>
+      
+          <input type="hidden" id="form-loaded-time" name="form_loaded_time" value="">
+      
+          <input type="submit" value="Submit">
+        </div>
     </div>
     <div class="membership-benefits">
       <h1>Membership Level Benefits:</h1>
@@ -95,20 +103,10 @@
       <p>$15 per month <br>
         One training every 3 months <br>
         Your business will appear on our main banner twice a week</p>
-      </p>
       <h4>Gold Membership:</h4>
       <p>$50 per month <br>
         One training every month <br>
         Your business will appear on our main banner three times a week</p>
-      </p>
-    </div>
-    <div class="business">
-    <label id="business-description" for="business-description">Business Description:</label>
-    <textarea id="business-description" name="business_description"></textarea>
-
-    <input type="hidden" id="form-loaded-time" name="form_loaded_time" value="">
-
-    <input type="submit" value="Submit">
     </div>
   </main>
   </form>
