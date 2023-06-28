@@ -50,7 +50,7 @@
     display: block;
   }
 
-  main {
+  #index {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(5, 400px);
