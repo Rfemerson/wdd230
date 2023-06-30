@@ -64,12 +64,6 @@
         display: block;
     }
 
-    #current_day_header {
-        padding: 0.5rem;
-        width: auto;
-        border-radius: 0.5rem;
-    }
-
     #index {
         display: grid;
         grid-template-columns: 1fr;
@@ -142,10 +136,10 @@
     #mainFooter img {
         align-self: center;
     }
-
+    /* Discover Page */
     .discover {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        display: grid;
+        grid-template-columns: 1fr;
         padding: 2rem;
         max-width: 1500px;
         text-align: center;

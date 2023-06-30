@@ -1,3 +1,20 @@
+const date = new Date();
+
+const lastVisit = Math.round((date.getTime() - (new Date(localStorage.getItem("lastVisitLocal")).getTime())) / (1000 * 60 * 60 * 24));
+if (localStorage.getItem("lastVisitLocal") === null) {
+    document.querySelector("#lastVisit").textContent = "First visit";
+}
+else if (lastVisit === 0) {
+    document.querySelector("#lastVisit").textContent = "Last visit: today";
+}
+else if (lastVisit === 1) {
+    document.querySelector("#lastVisit").textContent = "Last visit: yesterday";
+}
+else {
+    document.querySelector("#lastVisit").textContent = `Last visit: ${lastVisit} days ago`;
+};
+localStorage.setItem("lastVisitLocal", date);
+
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 const loadImages = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
@@ -22,4 +39,4 @@ if ("IntersectionObserver" in window) {
     imagesToLoad.forEach((img) => {
       loadImages(img);
     });
-  }
+}
