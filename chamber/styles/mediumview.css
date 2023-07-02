@@ -192,7 +192,7 @@
   }
 
   /* JOIN US PAGE */
-  #joinChamber {
+  .joinChamber {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;

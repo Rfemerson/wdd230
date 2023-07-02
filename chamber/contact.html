@@ -31,7 +31,7 @@
         <li><a href="discover.html" title="Discover">Discover</a></li>
         <li><a href="directory.html" title="Directory">Directory</a></li>
         <li><a href="join.html" title="Join">Join</a></li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
+        <li><a href="#" title="Contact">Contact</a></li>
       </ul>
     </nav>
     <div id="socialMedia">
@@ -48,7 +48,7 @@
   </header>
   <main class="joinChamber">
     <div class="form">
-      <h1>Join Us</h1>
+      <h1>Contact Us</h1>
       <form method="get" action="thankyou.html">
         <label for="first-name">First Name<span class="required">*</span>:
           <input type="text" id="first-name" name="first_name" required>
@@ -58,15 +58,11 @@
           <input type="text" id="last-name" name="last_name" required>
         </label>
         <br>
-        <label for="position">Business Position:
-          <input type="text" id="position" name="business_position" pattern="[A-Za-z\- ]{7,}" title="Please enter at least seven characters with only letters, hyphens, and spaces">
-        </label>
-        <br>
         <label for="email">Email<span class="required">*</span>:
           <input type="email" id="email" name="email" required placeholder="example@example.com">
         </label>
         <br>
-        <label for="phone">Cell Phone Number<span class="required">*</span>:
+        <label for="phone">Phone Number<span class="required">*</span>:
           <input type="tel" id="phone" name="phone_number" required>
         </label>
         <br>
@@ -74,15 +70,8 @@
           <input type="text" id="business-name" name="business_name" required>
         </label>
         <br>
-        <label for="membership-level">Membership Level:</label>
-        <select id="membership-level" name="membership_level">
-          <option value="np-membership">NP Membership (Free)</option>
-          <option value="bronze-membership">Bronze Membership</option>
-          <option value="silver-membership">Silver Membership</option>
-          <option value="gold-membership">Gold Membership</option>
-        </select>
         <div class="business">
-          <label id="business-description" for="business-description">Business Description:</label>
+          <label id="business-description" for="business-description">What are you contacting the chamber for?<span class="required">*</label>
           <textarea id="business-description" name="business_description"></textarea>
       
           <input type="hidden" id="form-loaded-time" name="form_loaded_time" value="">
@@ -91,21 +80,15 @@
         </div>
     </div>
     <div class="membership-benefits">
-      <h1>Membership Level Benefits:</h1>
-      <h4>NP Membership:</h4>
-      <p>No fee</p>
-      <h4>Bronze Membership:</h4>
-      <p> $5 per month <br>
-        One training every 6 months <br>
-        Your business will appear on our main banner once a week</p>
-      <h4>Silver Membership:</h4>
-      <p>$15 per month <br>
-        One training every 3 months <br>
-        Your business will appear on our main banner twice a week</p>
-      <h4>Gold Membership:</h4>
-      <p>$50 per month <br>
-        One training every month <br>
-        Your business will appear on our main banner three times a week</p>
+      <h1>Contact Information</h1>
+      <h4>Address</h4>
+      <p>R. Monsenhor Bruno, 1153 - Aldeota, Fortaleza - CE</p>
+      <h4>Email Adress</h4>
+      <p>contact@sunlund.org</p>
+      <h4>Phone Number</h4>
+      <p>+55 (85) 3333-4444</p>
+      <h4>Office Hours</h4>
+      <p>By Appointment Only</p>
     </div>
   </main>
   </form>

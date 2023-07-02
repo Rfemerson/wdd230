@@ -26,6 +26,7 @@ header {
     flex-wrap: wrap;
     margin: 0 auto;
     width: 100%;
+    overflow: hidden;
 }
 
 .logo {
@@ -108,7 +109,8 @@ header div {
     text-align: center;
 }
 
-#current_day_header, #lastVisitContainer {
+#current_day_header,
+#lastVisitContainer {
     background-color: var(--columbia-blue);
     color: var(--oxford-blue);
     font-family: var(--paragraph-font);
@@ -118,7 +120,7 @@ header div {
     margin: 0;
 }
 
-#curreny-day{
+#curreny-day {
     width: 100%;
 }
 
@@ -159,7 +161,7 @@ header div {
 
 #event a {
     text-decoration: none;
-    color: var(--oxford-blue);    
+    color: var(--oxford-blue);
 }
 
 #event a:hover {
@@ -174,6 +176,7 @@ header div {
     box-shadow: 0 0 5px #0c1536ff;
     overflow: hidden;
     padding: 1rem;
+    background-color: #00b4d8;
 }
 
 #weather h3 {
@@ -197,7 +200,7 @@ header div {
     border: none;
 }
 
-#current-temp{
+#current-temp {
     font-size: 2rem;
 }
 
@@ -213,7 +216,7 @@ header div {
 #weather a {
     font-size: 1rem;
     text-decoration: none;
-    color: var(--honolulu-blue);
+    color: var(--oxford-blue);
 }
 
 #weather a:hover {
@@ -237,7 +240,8 @@ header div {
     width: 100%;
     padding: 1.5rem;
     border-radius: 20px;
-    background-color: var(--honolulu-blue);
+    background-color: #fca311;
+    box-shadow: 5px 5px 15px #0c1536ff;
     font-family: var(--heading-font);
     cursor: pointer;
 }
@@ -248,8 +252,8 @@ header div {
     font-size: 2rem;
 }
 
-#joinUs:hover{
-    background-color: var(--slate-gray);
+#joinUs:hover {
+    background-color: var(--oxford-blue);
     color: var(--columbia-blue);
 }
 
@@ -300,6 +304,7 @@ header div {
     padding: 2rem;
     font-family: var(--heading-font);
     color: #EEF7FB;
+    text-shadow: -2px 0 0 #111111, 0 2px 0 #111111, 2px 0 0 #111111, 0 -2px 0 #111111, -2px -2px 0 #111111, 2px 2px 0 #111111, 2px -2px 0 #111111, -2px 2px 0 #111111;
 }
 
 #hero a {
@@ -308,7 +313,7 @@ header div {
     left: 80%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
-    background-color: var(--columbia-blue);
+    background-color: #fca311;
     color: var(--oxford-blue);
     font-size: 18px;
     font-family: var(--heading-font);
@@ -316,6 +321,7 @@ header div {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    box-shadow: 5px 5px 15px #0c1536ff;
 }
 
 #hero a:hover {
@@ -331,28 +337,38 @@ header div {
     text-align: center;
 }
 
-#spotlight-1, #spotlight-2, #spotlight-3 {
+#spotlight-1,
+#spotlight-2,
+#spotlight-3 {
     border: 1px solid #0077b6ff;
     padding: 0.5rem;
 }
 
-#spotlight-1 img, #spotlight-2 img, #spotlight-3 img {
+#spotlight-1 img,
+#spotlight-2 img,
+#spotlight-3 img {
     border-radius: 10px;
 }
 
 
-#spotlight-1 h4, #spotlight-2 h4, #spotlight-3 h4 {
+#spotlight-1 h4,
+#spotlight-2 h4,
+#spotlight-3 h4 {
     margin: 0;
     font-family: var(--heading-font);
 }
 
-#spotlight-1 p, #spotlight-2 p, #spotlight-3 p {
+#spotlight-1 p,
+#spotlight-2 p,
+#spotlight-3 p {
     margin: 0;
     font-size: 1.5rem;
     font-family: var(--paragraph-font);
 }
 
-#spotlight-1 a, #spotlight-2 a, #spotlight-3 a {
+#spotlight-1 a,
+#spotlight-2 a,
+#spotlight-3 a {
     margin: 0;
     font-size: 1.5rem;
     font-family: var(--paragraph-font);
@@ -360,7 +376,9 @@ header div {
     color: var(--oxford-blue);
 }
 
-#spotlight-1 a:hover, #spotlight-2 a:hover, #spotlight-3 a:hover {
+#spotlight-1 a:hover,
+#spotlight-2 a:hover,
+#spotlight-3 a:hover {
     color: var(--honolulu-blue);
     text-decoration: underline;
 }
@@ -425,14 +443,6 @@ footer div {
     text-decoration: none;
 }
 
-/* #location p {
-    margin-right: 70px;
-}
-
-#location img {
-    float: left;
-} */
-
 #project-information {
     grid-column: 1/4;
     text-align: center;
@@ -481,7 +491,7 @@ footer div {
     text-align: center;
 }
 
-#galeryContainer h1{
+#galeryContainer h1 {
     margin-top: 0;
 }
 
@@ -519,7 +529,7 @@ footer div {
 
 /* JOIN US PAGE */
 
-#joinChamber {
+.joinChamber {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
@@ -528,7 +538,7 @@ footer div {
     align-items: center;
 }
 
-#form {
+.form {
     grid-column: 1/3;
     display: flex;
     flex-direction: column;
@@ -540,11 +550,11 @@ footer div {
     border-radius: 1rem;
 }
 
- #form h1 {
+.form h1 {
     font-family: var(--heading-font);
 }
 
- #form label {
+.form label {
     display: block;
     margin-bottom: 10px;
     font-family: var(--paragraph-font);
@@ -554,7 +564,7 @@ footer div {
 
 .required {
     color: red;
-  }
+}
 
 input,
 select {
@@ -622,6 +632,25 @@ div h1 {
 
 /* Directory PAGE */
 
+#directory {
+    text-align: center;
+}
+
+#grid, #list {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-family: var(--heading-font);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fca311;
+    color: var(--oxford-blue);
+}
+
+#grid:hover, #list:hover {
+    background-color: var(--oxford-blue);
+    color: var(--columbia-blue);
+}
+
 .company {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -645,8 +674,8 @@ div h1 {
     text-align: center;
     align-items: center;
     border: 2px solid #cbebfbff;
-    padding: 2rem; 
-    box-shadow: 0 0 10px #343a40;   
+    padding: 2rem;
+    box-shadow: 0 0 10px #343a40;
     display: flex;
     flex-direction: column;
 }
@@ -660,41 +689,41 @@ div h1 {
 .company a {
     text-decoration: none;
     color: var(--honolulu-blue);
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .company a:hover {
     text-decoration: solid;
     color: var(--slate-gray);
     cursor: pointer;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
 }
-/* 
+
 .list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0.25rem;
 }
 
-.list section > * {
-	margin: 0 1rem;
+.list section>* {
+    margin: 0 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+    display: none;
+}
 
-
-/* .list section h2 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+.list section h2 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
-} */
+    background-color: #bed;
+}

@@ -44,16 +44,16 @@ const displayCompanies = (companies) => {
     });
 }
 
-// const gridbutton = document.querySelector(".company");
-// const listbutton = document.querySelector("#list");
-// const display = document.querySelector("#directory");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#directory");
 
-// gridbutton.addEventListener("click", () => {
-// 	display.classList.remove("list");
-// });
+gridbutton.addEventListener("click", () => {
+	display.classList.remove("list");
+});
 
-// listbutton.addEventListener("click", showList); 
+listbutton.addEventListener("click", showList); 
 
-// function showList() {
-// 	display.classList.add("list");
-// }
+function showList() {
+	display.classList.add("list");
+}
