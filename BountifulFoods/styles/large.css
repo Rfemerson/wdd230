@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&family=Roboto:wght@300&display=swap');
+
+:root {
+    /* fonts */
+    --heading-font: "Noto Serif Makasar";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+    /* colors */
+    --avocado: #5a7105ff;
+    --selective-yellow: #f4b506ff;
+    --field-drab: #594600ff;
+    --dark-red: #8c0100ff;
+    --black-bean: #420000ff;
+    --snow: #F9F2F0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--snow);
+}
+
+header {
+    background-color: var(--avocado);
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 8rem;
+    border-radius: 150px;
+    padding: 1rem;
+    align-items: center;
+    float: left;
+}
+
+header a {
+    text-align: center;
+    grid-column: 1;
+    justify-items: center;
+    text-decoration: none;
+}
+
+header h1,
+header h2 {
+    font-family: var(--heading-font);
+    color: var(--selective-yellow);
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 50px;
+    letter-spacing: 0.6rem;
+    width: 390px;
+
+}
+
+header h2 {
+    font-size: 0.9rem;
+    width: 380px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 10px auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    color: var(--selective-yellow);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#nav-bar .navigation li {
+    margin-left: 10px;
+}
+
+#nav-bar .navigation li:first-child {
+    margin-left: 0;
+}
+
+#nav-bar .navigation li a {
+    text-decoration: none;
+    color: var(--selective-yellow);
+    font-family: var(--heading-font);
+    padding: 2rem;
+}
+
+.navigation li a:hover {
+    background-color: var(--slate-gray);
+    color: var(--oxford-blue);
+    font-weight: 700;
+}
+
+#hamButton {
+    display: none;
+}
+
+header div {
+    margin: 50px;
+    text-align: center;
+}
+
+#current_day_header,
+#lastVisitContainer {
+    background-color: var(--columbia-blue);
+    color: var(--oxford-blue);
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    align-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+#curreny-day {
+    width: 100%;
+}
