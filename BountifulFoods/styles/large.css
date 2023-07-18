@@ -46,24 +46,18 @@ header a {
     text-decoration: none;
 }
 
-header h1,
-header h2 {
+header h1 {
+    float: left;
     font-family: var(--heading-font);
     color: var(--selective-yellow);
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
 }
 
-header h1 {
-    margin-top: 50px;
-    letter-spacing: 0.6rem;
-    width: 390px;
-
-}
-
-header h2 {
-    font-size: 0.9rem;
-    width: 380px;
+header p {
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    color: var(--selective-yellow);
 }
 
 nav {
@@ -109,19 +103,4 @@ nav ul {
 header div {
     margin: 50px;
     text-align: center;
-}
-
-#current_day_header,
-#lastVisitContainer {
-    background-color: var(--columbia-blue);
-    color: var(--oxford-blue);
-    font-family: var(--paragraph-font);
-    font-size: 1.2rem;
-    align-content: center;
-    width: 100%;
-    margin: 0;
-}
-
-#curreny-day {
-    width: 100%;
 }
