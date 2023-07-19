@@ -21,10 +21,8 @@ body {
 header {
     background-color: var(--avocado);
     padding: 5px 0;
-    justify-content: space-between;
     align-items: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 100%;
@@ -33,7 +31,6 @@ header {
 
 .logo {
     width: 8rem;
-    border-radius: 150px;
     padding: 1rem;
     align-items: center;
     float: left;
@@ -52,6 +49,7 @@ header h1 {
     color: var(--selective-yellow);
     margin: 50px 0 0 0;
     padding: 0;
+    letter-spacing: 0.6rem;
 }
 
 header p {
@@ -91,7 +89,8 @@ nav ul {
 }
 
 .navigation li a:hover {
-    background-color: var(--slate-gray);
+    background-color: var(--snow);
+    border-radius: 2rem;
     color: var(--oxford-blue);
     font-weight: 700;
 }
@@ -100,7 +99,94 @@ nav ul {
     display: none;
 }
 
-header div {
-    margin: 50px;
+header div a{
+    padding: .8rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3E4E03;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h1,
+footer h2 {
+    color: var(--selective-yellow);
+    margin: 0;
+    padding: 0;
+}
+
+footer h1 {
+    font-family: var(--heading-font);
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+footer h2 {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+}
+
+footer hr {
+    grid-column: 1/5;
+    color: var(--snow);
+    width: 95%;
+    padding: 0;
+}
+
+#mainFooter {
     text-align: center;
+    padding: 1rem;
+}
+
+footer #socialMedia {
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+#footerNav{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+#footerNav a{
+    display: flex;
+    padding: .5rem;
+    color: var(--selective-yellow);
+    font-family: var(--heading-font);
+}
+
+#footerNav a:hover{
+    display: flex;
+    padding: .5rem;
+    color: var(--snow);
+    font-family: var(--heading-font);
+}
+
+.contact-location,
+.contact-location a {
+    color: var(--selective-yellow);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#project-information {
+    grid-column: 1/5;
+    text-align: center;
+    color: var(--selective-yellow);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

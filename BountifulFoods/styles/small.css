@@ -1,0 +1,93 @@
+@media screen and (max-width: 879px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    header a {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        float: none;
+        width: 100px;
+        height: 100px;
+    }
+
+    #hamButton {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: fit-content;
+        font-size: 1.5rem;
+        padding: .5rem;
+        color: navy;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li a {
+        padding: 1.15rem;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigation li a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .navigation.responsive li {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation.responsive li a {
+        display: block;
+    }
+
+    #socialMedia {
+        margin: 1rem;
+        display: flex;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer h1, footer h2 {
+        margin: 0;
+    }
+
+    .contact-location, footer#socialMedia, #footerNav {
+        margin: 1rem;
+    }
+
+
+}

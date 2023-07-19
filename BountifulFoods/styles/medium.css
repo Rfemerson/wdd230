@@ -1,0 +1,85 @@
+@media screen and (min-width: 880px) and (max-width: 1250px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  header a {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  .logo {
+    width: 8rem;
+    float: none;
+  }
+
+  #hamButton {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .navigation li {
+    display: none;
+  }
+
+  .navigation li a {
+    padding: 1.15rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navigation li a:hover {
+    background-color: --black-bean;
+    color: #333;
+    font-weight: 700;
+  }
+
+  .navigation.responsive li {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation.responsive li a {
+    display: block;
+  }
+
+  header div#socialMedia {
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer h1, footer h2{
+    margin: 0;
+  }
+
+  .contact-location, footer#socialMedia, #footerNav {
+    margin: 1rem;
+  }
+}
