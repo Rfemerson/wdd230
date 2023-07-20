@@ -41,28 +41,31 @@
             </a>
         </div>
     </header>
-    <main id="Fresh">
+    <main id="fresh">
         <h1>Create your Special Drink</h1>
         <form id="order-form">
-            <label for="first-name">First Name:</label>
+            <label for="first-name">First Name<span class="required">*</span>:</label>
             <input type="text" id="first-name" required>
         
-            <label for="email">Email:</label>
+            <label for="email">Email<span class="required">*</span>:</label>
             <input type="email" id="email" required>
         
-            <label for="phone">Phone Number:</label>
+            <label for="phone">Phone Number<span class="required">*</span>:</label>
             <input type="tel" id="phone" required>
         
             <label for="fruit1">Choose Fruit 1:</label>
             <select id="fruit1" required>
+              <!-- Fruit options will be dynamically filled by JavaScript -->
             </select>
         
             <label for="fruit2">Choose Fruit 2:</label>
             <select id="fruit2" required>
+              <!-- Fruit options will be dynamically filled by JavaScript -->
             </select>
         
             <label for="fruit3">Choose Fruit 3:</label>
             <select id="fruit3" required>
+              <!-- Fruit options will be dynamically filled by JavaScript -->
             </select>
         
             <label for="special-instructions">Special Instructions:</label>
@@ -121,7 +124,8 @@
             Modification: <span id="last-update"></span></p>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/fruits.json"></script>
 </body>
 
 </html>

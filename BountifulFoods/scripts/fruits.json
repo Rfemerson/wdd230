@@ -1,0 +1,36 @@
+{
+  "fruits": [
+    {
+      "name": "Banana",
+      "carbs": 22,
+      "proteins": 1,
+      "fats": 0.2,
+      "sugars": 17.2,
+      "calories": 96
+    },
+    {
+      "name": "Maçã",
+      "carbs": 11.4,
+      "proteins": 0.4,
+      "fats": 0.4,
+      "sugars": 10.3,
+      "calories": 52
+    },
+    {
+      "name": "Laranja",
+      "carbs": 8.2,
+      "proteins": 1,
+      "fats": 0.2,
+      "sugars": 8.2,
+      "calories": 43
+    },
+    {
+      "name": "Morango",
+      "carbs": 7.7,
+      "proteins": 0.7,
+      "fats": 0.3,
+      "sugars": 4.9,
+      "calories": 29
+    }
+  ]
+}
