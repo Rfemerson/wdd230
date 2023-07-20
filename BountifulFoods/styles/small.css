@@ -32,7 +32,6 @@
         width: fit-content;
         font-size: 1.5rem;
         padding: .5rem;
-        color: navy;
     }
 
     .navigation {
@@ -51,12 +50,10 @@
         display: block;
         text-align: center;
         text-decoration: none;
-        color: white;
     }
 
     .navigation li a:hover {
-        background-color: #bbb;
-        color: #333;
+        background-color: #F9F2F0;
         font-weight: 700;
     }
 

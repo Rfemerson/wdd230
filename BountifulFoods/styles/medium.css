@@ -47,12 +47,11 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #fff;
   }
 
   .navigation li a:hover {
     background-color: --black-bean;
-    color: #333;
+    color: #F9F2F0;
     font-weight: 700;
   }
 
