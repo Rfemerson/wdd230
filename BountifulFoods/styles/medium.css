@@ -81,4 +81,11 @@
   .contact-location, footer#socialMedia, #footerNav {
     margin: 1rem;
   }
+
+  #fresh, #aboutus, #index {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
 }

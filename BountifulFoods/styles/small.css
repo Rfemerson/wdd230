@@ -86,5 +86,12 @@
         margin: 1rem;
     }
 
+    #fresh, #aboutus, #index {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #hero h2 {
+        display: none;
+    }
 }
